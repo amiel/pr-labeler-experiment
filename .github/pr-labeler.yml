@@ -20,7 +20,7 @@ integration-branch:
 
 stacked-pr:
   - base-branch:
-    - "!(main|integration/)"
+    - "^(?!(main|integration/))"
 
 migration:
   - changed-files: "db/migrate/*"
