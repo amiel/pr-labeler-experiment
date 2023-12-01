@@ -1,26 +1,26 @@
 
 feature:
-  - head-branch: "feature/*"
+  - head-branch: "feature/"
 
 bug:
   - head-branch: 
-    - "bug/*"
-    - "fix/*"
-    - "hotfix/*"
-    - "defect/*"
+    - "bug/"
+    - "fix/"
+    - "hotfix/"
+    - "defect/"
 
 chore:
   - head-branch:
-    - "chore/*"
-    - "dependabot/*"
+    - "chore/"
+    - "dependabot/"
 
 integration-branch:
   - base-branch:
-    - "integration/*"
+    - "integration/"
 
 stacked-pr:
   - base-branch:
-    - "!main"
+    - "!(main|integration/)"
 
 migration:
   - changed-files: "db/migrate/*"
