@@ -1,0 +1,29 @@
+
+feature:
+  - head-branch: "feature/*"
+
+bug:
+  - head-branch: 
+    - "bug/*"
+    - "fix/*"
+    - "hotfix/*"
+    - "defect/*"
+
+chore:
+  - head-branch:
+    - "chore/*"
+    - "dependabot/*"
+
+integration-branch:
+  - base-branch:
+    - "integration/*"
+
+stacked-pr:
+  - base-branch:
+    - "!(main|integration/*)"
+
+migration:
+  - changed-files: "db/migrate/*"
+
+secrets:
+  - changed-files: config/deploy/k8s/secret.yaml.erb
